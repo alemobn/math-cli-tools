@@ -1,0 +1,10 @@
+# python bytecode
+__pycache__/
+*.pyc
+
+# virtual environments
+.venv/
+venv/
+
+# vs code workspace
+.vscode/
