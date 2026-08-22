@@ -9,4 +9,12 @@ def get_number():
             continue
 
 
-get_number()
+def display_table(n):
+    print(f"\n----- Table of {n} -----")
+    for multiplier in range(1, 11):
+        print(f"{n} x {multiplier} = {n * multiplier}")
+    print("----------------------")
+
+
+number = get_number()
+display_table(number)
