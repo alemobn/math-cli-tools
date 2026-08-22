@@ -1,7 +1,12 @@
 def get_number():
-    n = int(input('Enter a number to see its times table: '))
-    print('Your choose number:', n)
-    return n
+    while True:
+        n = input("Enter a number to see its times table: ")
+        try:
+            n = int(n)
+            return n
+        except ValueError:
+            print("Invalid input. Please enter integers only.")
+            continue
 
 
 get_number()
